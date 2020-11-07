@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Никитский дворец</title>
+    <link rel="stylesheet" href="./style/magnific-popup.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./style/aos.css">
+    <link rel="stylesheet" href="./style/index.css">
+</head>
+
+<body class="page page--dark">
+
+    @@include('./pages/generic/header.html', { "logo": "logo-big.svg" })
+
+    <main id="main" class="index swiper-container">
+        <div class="swiper-wrapper">
+            <div class="index__slide swiper-slide" style="background-image: url(./img/index/bg-1.png);">
+                <div class="index__slide--gradient"></div>
+                <div class="index__title" data-aos="zoom-in" data-aos-duration="1000">
+                    <img src="./img/index/title-1.png" alt="В гармионии с природой">
+                </div>
+                <div class="index__text" data-aos="fade-right" data-aos-delay="400" data-aos-duration="1000">
+                    <p>
+                        Удобное расположения и инфраструктура, способствуют роскошному отдыху и полноценному
+                        восстановлению сил в живописном уголке Крыма. Польза уникального климата, доступность комфорта
+                        формируют высокое качество жизни владельцев квартир в Жилом комплексе "Никитский Дворец".
+                    </p>
+                </div>
+                <a class="index__btn btn" href="./flats.html" data-aos="fade-up" data-aos-delay="1000">
+                    <div class="text">Выбрать квартиру</div>
+                    <div class="text_copy">Выбрать квартиру</div>
+                    <span class="anim anim-1"></span>
+                    <span class="anim anim-2"></span>
+                    <span class="anim anim-3"></span>
+                    <span class="anim anim-4"></span>
+                </a>
+            </div>
+            <div class="index__slide swiper-slide" style="background-image: url(./img/index/bg-2.png);">
+                <div class="index__slide--gradient"></div>
+                <div class="index__title" data-aos="zoom-in" data-aos-duration="1000">
+                    <img src="./img/index/title-2.png" alt="В гармионии с природой">
+                </div>
+                <div class="index__text" data-aos="fade-right" data-aos-delay="400" data-aos-duration="1000">
+                    <p>
+                        Квартира у моря позволяет жить всей семье в здоровом климате и инвестировать в стабильное,
+                        надёжное будущее. Панорамный вид на море даже с первого этажа даст возможность любоваться
+                        пейзажем в любое время года.
+                    </p>
+                </div>
+                <a class="index__btn btn" href="./flats.html" data-aos="fade-up" data-aos-delay="1000">
+                    <div class="text">Выбрать квартиру</div>
+                    <div class="text_copy">Выбрать квартиру</div>
+                    <span class="anim anim-1"></span>
+                    <span class="anim anim-2"></span>
+                    <span class="anim anim-3"></span>
+                    <span class="anim anim-4"></span>
+                </a>
+            </div>
+            <div class="index__slide swiper-slide" style="background-image: url(./img/index/bg-3.png);">
+                <div class="index__slide--gradient"></div>
+                <div class="index__title" data-aos="zoom-in" data-aos-duration="1000">
+                    <img src="./img/index/title-3.png" alt="В гармионии с природой">
+                </div>
+                <div class="index__text" data-aos="fade-right" data-aos-delay="400" data-aos-duration="1000">
+                    <p>
+                        Квартиры от современного застройщика объединили в себе прогрессивные технологии, современные
+                        технические решения и яркие архитектурные идеи. Качественное жилое пространство,
+                        функциональность каждого квадратного метра, уникальность отделки — новый формат недвижимости в
+                        Крыму, воплощённый в Жилом комплексе «Никитский Дворец».
+                    </p>
+                </div>
+                <a class="btn index__btn" href="./flats.html" data-aos="fade-up" data-aos-delay="1000">
+                    <div class="text">Выбрать квартиру</div>
+                    <div class="text_copy">Выбрать квартиру</div>
+                    <span class="anim anim-1"></span>
+                    <span class="anim anim-2"></span>
+                    <span class="anim anim-3"></span>
+                    <span class="anim anim-4"></span>
+                </a>
+            </div>
+        </div>
+        <div class="slider__btn slider__btn-prev">
+            <svg>
+                <use xlink:href="./img/index/sprite.svg#arrow"></use>
+            </svg>
+        </div>
+        <div class="slider__btn slider__btn-next">
+            <svg>
+                <use xlink:href="./img/index/sprite.svg#arrow"></use>
+            </svg>
+        </div>
+        <div class="swiper-scrollbar"></div>
+    </main>
+
+    @@include('./pages/generic/modals/fixed-buttons.html')
+
+    @@include('./pages/generic/modals/cookie.html')
+    
+    @@include('./pages/generic/modals/callback.html')
+    
+    @@include('./pages/generic/modals/online.html')
+
+
+    @@include('./pages/generic/connects/scripts.html')
+</body>
+
+</html>

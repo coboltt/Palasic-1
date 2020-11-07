@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Выбор квартиры</title>
+   <link rel="stylesheet" href="./style/magnific-popup.css">
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+   <link rel="stylesheet" href="./style/aos.css">
+   <link rel="stylesheet" href="./style/flat-single.css">
+</head>
+
+<body class="page page--light">
+
+   @@include('./pages/generic/header.html', { "logo": "logo-min-gold.svg", "mod": "header--light" })
+   @@include('./pages/generic/submenu.html', { "flat": "class='submenu__item--active'" })
+
+   
+
+   @@include('./pages/generic/modals/fixed-buttons.html')
+
+   @@include('./pages/generic/modals/cookie.html')
+
+   @@include('./pages/generic/modals/callback.html')
+
+   @@include('./pages/generic/modals/online.html')
+
+   @@include('./pages/generic/connects/scripts.html')
+</body>
+</html>

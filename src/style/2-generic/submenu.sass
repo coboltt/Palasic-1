@@ -1,0 +1,58 @@
+.submenu 
+   margin-top: 14px
+   width: 80%
+   margin: 0 auto
+   &__list 
+      padding: 0
+      margin: 0
+      display: flex
+      justify-content: center
+      gap: 35px
+      li 
+         list-style: none
+         padding: 0
+         a 
+            font-size: 13px
+            font-weight: 500
+            line-height: 43px
+            letter-spacing: -0.21px
+            text-align: center
+            color: #606060
+            position: relative
+            transition: all 0.2s
+            &::before,
+            &::after 
+               content: ''
+               width: 0
+               height: 2px
+               background-color: $gold
+               position: absolute
+               bottom: -14px
+               transition: all 0.2s
+            &::before 
+               right: 50%
+            &::after 
+               left: 50%
+            &:hover 
+               color: $dark
+               &::before,
+               &::after 
+                  width: 50%
+
+   &__item--active a 
+      color: $dark !important
+      &::before,
+      &::after 
+         width: 50% !important
+
+   &--dark
+      li a
+         color: #c8c8c8
+         &::before,
+         &::after 
+            background-color: #fff
+
+         &:hover 
+            color: #fff
+         .submenu__item--active a 
+            color: #fff !important

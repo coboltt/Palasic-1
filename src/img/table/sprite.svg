@@ -1,0 +1,26 @@
+<svg width="0" height="0" class="hidden">
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 18" id="eye">
+    <g stroke="#C2A07C" fill="none" fill-rule="evenodd">
+      <path d="M26.615 12.505A16.955 16.955 0 0114.1 18C8.23 18 3.055 15.025 0 10.5 3.054 5.976 8.23 3 14.1 3c5.87 0 11.044 2.975 14.1 7.5"></path>
+      <path d="M3.266 2.92A21.426 21.426 0 0114.1 0c4.663 0 8.98 1.483 12.507 4.002"></path>
+      <circle cx="14" cy="10.5" r="4.5"></circle>
+    </g>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 24" id="heart">
+    <path d="M18.679 3a6.5 6.5 0 016.015 8.967c-1.083 3.836-4.32 7.222-9.708 10.161-5.385-2.725-8.885-5.978-10.499-9.757a6.551 6.551 0 01-.478-1.313l-.016-.054A6.74 6.74 0 013.821 9.5a6.5 6.5 0 0110.68-4.979A6.463 6.463 0 0118.679 3z" fill="#C2A07C" fill-rule="evenodd"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 21" id="layout">
+    <path d="M13.195 18.1H1a1 1 0 01-1-1V1a1 1 0 011-1h21a1 1 0 011 1v19a1 1 0 01-1 1h-5.286a1 1 0 01-1-1v-4.255h0M0 10h9m2-.053l4.94.02m.136-2.924h6.899M16 13V3M6.947 17.977L7 14.05" stroke="#C2A07C" fill="none"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" width="21" height="23" viewBox="0 0 21 23" id="compass">
+    <g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g stroke="#C2A07C">
+            <g>
+                <g>
+                    <path d="M36 47.366L56 36.843 48.093 58.843 46 48.857 39.194 47.843" transform="translate(-1063 -193) translate(1027 157)"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</symbol>
+</svg>

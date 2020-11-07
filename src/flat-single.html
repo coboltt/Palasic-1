@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Выбор квартиры</title>
+   <link rel="stylesheet" href="./style/magnific-popup.css">
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+   <link rel="stylesheet" href="./style/aos.css">
+   <link rel="stylesheet" href="./style/flat-single.css">
+</head>
+
+<body class="page page--light">
+
+   @@include('./pages/generic/header.html', { "logo": "logo-min-gold.svg", "mod": "header--light" })
+   @@include('./pages/generic/submenu.html', { "flat": "class='submenu__item--active'" })
+
+   <main>
+
+      @@include('./pages/generic/compass.html')
+ 
+      <section id="stage-content" class="content">
+         <!-- <div class="container"> -->
+            <div class="content__inner">
+               <div class="sidebar-left" data-aos="fade-right" data-aos-delay="800">
+                     <div class="sidebar-left__housing">
+                        <p class="sidebar-left__housing-name">Корпус</p>
+                        <p class="sidebar-left__housing-num">4</p>
+                     </div>
+                     <div class="sidebar-left__cat">
+                        <p class="sidebar-left__cat-title">Категория:</p>
+                        <div class="sidebar-left__cat-wrapper">
+                           <div class="sidebar-left__cat-item cat-flats-1">
+                                 <p>
+                                    <span>1</span>
+                                    Комнатная
+                                 </p>
+                           </div>
+                           <div class="sidebar-left__cat-item cat-flats-2">
+                                 <p>
+                                    <span>2</span>
+                                    Комнатная
+                                 </p>
+                           </div>
+                           <div class="sidebar-left__cat-item cat-flats-3">
+                                 <p>
+                                    <span>3</span>
+                                    Комнатная
+                                 </p>
+                           </div>
+                           <div class="sidebar-left__cat-item cat-flats-4">
+                                 <p>
+                                    <span>4</span>
+                                    Комнатная
+                                 </p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="sidebar-left__status">
+                        <p class="sidebar-left__status-title sidebar-left__cat-title">Статус объекта:</p>
+                        <div class="sidebar-left__status-wrapper">
+                           <div class="sidebar-left__status-item">
+                                 <div class="sidebar-left__status-box"></div>
+                                 <div class="sidebar-left__status-name">В продаже</div>
+                           </div>
+                           <div class="sidebar-left__status-item">
+                                 <div class="sidebar-left__status-box sidebar-left__status-box--red"></div>
+                                 <div class="sidebar-left__status-name">Продано</div>
+                           </div>
+                           <div class="sidebar-left__status-item">
+                                 <div class="sidebar-left__status-box sidebar-left__status-box--yellow"></div>
+                                 <div class="sidebar-left__status-name">Забронировано</div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="sidebar-left__info">
+                        <div class="sidebar-left__info-sizes">
+                           <p><span>3</span>Комнаты</p>
+                           <p><span>109.03 м²</span>Общая площадь</p>
+                        </div>
+
+                        <div class="sidebar-left__info-prices">
+                           <p><span>15 046 140 * ₽</span>*При единовременной оплате</p>
+                           <p><span>138 000 ₽</span>Стоимость за м²</p>
+                        </div>
+                     </div>
+               </div>
+               <div class="plan" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="1000">
+                     <div class="plan__msg plan__sold">
+                        <p class="plan__msg-text">Извините, данная квартира продана</p>
+                        <a class="plan__msg-link btn btn--light btn__gold" href="./parameters-selection.html">Похожие
+                           квартиры</a>
+                     </div>
+                     <div class="plan__msg plan__booked">
+                        <p class="plan__msg-text">Извините, данная квартира забронирована</p>
+                        <a class="plan__msg-link btn btn--light btn__gold" href="./parameters-selection.html">Похожие
+                           квартиры</a>
+                     </div>
+                     <img class="plan__map plan__free" src="./img/flat-single/plan-4.7.3.png" alt="">
+                     <img class="plan__map plan__flats-2" src="./img/flat-single/plan-4.7.1.png" alt="">
+                     <img class="plan__map plan__clean" src="./img/flat-single/plan-4.7.png" alt="">
+                     <img class="plan__map plan__red" src="./img/flat-single/plan-4.7-red.png" alt="">
+                     <img class="plan__map plan__orange" src="./img/flat-single/plan-4.7-orange.png" alt="">
+                     <img class="plan__overlay" src="./img/flat-single/plan-4.7.png" alt="">
+                     <img id="plan-img" src="./img/flat-single/plan-4.7.png" usemap="#image-map">
+                     <map class="map-desktop" name="image-map">
+                        <area class="plan__flat plan__flat-1" href="#"
+                           coords="691,9,557,10,556,144,460,144,459,189,490,190,490,281,556,281,556,406,577,406,577,421,690,421"
+                           shape="poly">
+                        <area class="plan__flat plan__flat-2" href="#" data-maphilight='{"fillColor":"ff9f00"}'
+                           coords="459,145,319,145,319,274,286,275,287,411,529,414,529,404,554,404,554,281,490,282,490,191,459,190"
+                           shape="poly">
+                        <area class="plan__flat plan__flat-3" href="#" data-maphilight='{"fillColor":"86b953"}'
+                           coords="362,97,363,144,319,144,318,274,286,275,287,410,288,431,283,459,267,484,241,501,211,508,182,501,155,485,138,460,133,434,131,414,5,414,5,142,98,141,99,11,281,13,281,95"
+                           shape="poly">
+                     </map>
+                     <map class="map-1366" name="image-map">
+                        <area class="plan__flat plan__flat-1" coords="398,10,497,8,498,304,402,300,401,202,354,200,353,137,332,135,332,103,401,104" shape="poly">
+                        <area class="plan__flat plan__flat-2" coords="330,105,333,135,352,140,353,200,399,207,399,299,205,295,206,200,232,195,232,106" shape="poly">
+                        <area class="plan__flat plan__flat-3" coords="231,108,229,196,203,198,201,295,208,297,208,329,190,350,168,363,147,366,128,360,114,349,99,329,95,300,6,297,4,106,74,102,74,11,200,11,198,68,261,74,261,105" shape="poly">
+                     </map>
+                     <div class="sidebar-right__loupe loupe-stage">
+                        <div class="sidebar-right__loupe-circle">
+                           <div class="sidebar-right__loupe-line1"></div>
+                           <div class="sidebar-right__loupe-line2"></div>
+                        </div>
+                        <div class="sidebar-right__loupe-line3"></div>
+                     </div>
+               </div>
+               <div class="sidebar-right" data-aos="fade-left" data-aos-delay="800">
+                     <ul class="sidebar-right__list">
+                        <li class="sidebar-right__item">
+                           <p class="sidebar-right__name">10 Этаж</p>
+                           <p class="sidebar-right__descr">с отделкой White box</p>
+                           <a class="sidebar-right__link" href="#" download>
+                                 <span class="sidebar-right__link-icon">
+                                    <img src="./img/common/pdf.svg" alt="">
+                                 </span>
+                                 <span class="sidebar-right__link-text">Скачать план этажа</span>
+                           </a>
+                        </li>
+                        <li class="sidebar-right__item">
+                           <p class="sidebar-right__name">9 Этаж</p>
+                           <p class="sidebar-right__descr">с отделкой White box</p>
+                           <a class="sidebar-right__link" href="#" download>
+                                 <span class="sidebar-right__link-icon">
+                                    <img src="./img/common/pdf.svg" alt="">
+                                 </span>
+                                 <span class="sidebar-right__link-text">Скачать план этажа</span>
+                           </a>
+                        </li>
+                        <li class="sidebar-right__item">
+                           <p class="sidebar-right__name">8 Этаж</p>
+                           <p class="sidebar-right__descr">с отделкой White box</p>
+                           <a class="sidebar-right__link" href="#" download>
+                                 <span class="sidebar-right__link-icon">
+                                    <img src="./img/common/pdf.svg" alt="">
+                                 </span>
+                                 <span class="sidebar-right__link-text">Скачать план этажа</span>
+                           </a>
+                        </li>
+                        <li class="sidebar-right__item sidebar-right__item--active">
+                           <p class="sidebar-right__name">7 Этаж</p>
+                           <p class="sidebar-right__descr">с отделкой White box</p>
+                           <a class="sidebar-right__link" href="#" download>
+                                 <span class="sidebar-right__link-icon">
+                                    <img src="./img/common/pdf.svg" alt="">
+                                 </span>
+                                 <span class="sidebar-right__link-text">Скачать план этажа</span>
+                           </a>
+                        </li>
+                        <li class="sidebar-right__item">
+                           <p class="sidebar-right__name">6 Этаж</p>
+                           <p class="sidebar-right__descr">с отделкой White box</p>
+                           <a class="sidebar-right__link" href="#" download>
+                                 <span class="sidebar-right__link-icon">
+                                    <img src="./img/common/pdf.svg" alt="">
+                                 </span>
+                                 <span class="sidebar-right__link-text">Скачать план этажа</span>
+                           </a>
+                        </li>
+                        <li class="sidebar-right__item">
+                           <p class="sidebar-right__name">5 Этаж</p>
+                           <p class="sidebar-right__descr">с отделкой White box</p>
+                           <a class="sidebar-right__link" href="#" download>
+                                 <span class="sidebar-right__link-icon">
+                                    <img src="./img/common/pdf.svg" alt="">
+                                 </span>
+                                 <span class="sidebar-right__link-text">Скачать план этажа</span>
+                           </a>
+                        </li>
+                        <li class="sidebar-right__item">
+                           <p class="sidebar-right__name">4 Этаж</p>
+                           <p class="sidebar-right__descr">с отделкой White box</p>
+                           <a class="sidebar-right__link" href="#" download>
+                                 <span class="sidebar-right__link-icon">
+                                    <img src="./img/common/pdf.svg" alt="">
+                                 </span>
+                                 <span class="sidebar-right__link-text">Скачать план этажа</span>
+                           </a>
+                        </li>
+                        <li class="sidebar-right__item">
+                           <p class="sidebar-right__name">3 Этаж</p>
+                           <p class="sidebar-right__descr">с отделкой White box</p>
+                           <a class="sidebar-right__link" href="#" download>
+                                 <span class="sidebar-right__link-icon">
+                                    <img src="./img/common/pdf.svg" alt="">
+                                 </span>
+                                 <span class="sidebar-right__link-text">Скачать план этажа</span>
+                           </a>
+                        </li>
+                        <li class="sidebar-right__item">
+                           <p class="sidebar-right__name">2 Этаж</p>
+                           <p class="sidebar-right__descr">с отделкой White box</p>
+                           <a class="sidebar-right__link" href="#" download>
+                                 <span class="sidebar-right__link-icon">
+                                    <img src="./img/common/pdf.svg" alt="">
+                                 </span>
+                                 <span class="sidebar-right__link-text">Скачать план этажа</span>
+                           </a>
+                        </li>
+                        <li class="sidebar-right__item">
+                           <p class="sidebar-right__name">1 Этаж</p>
+                           <p class="sidebar-right__descr">с отделкой White box</p>
+                           <a class="sidebar-right__link" href="#" download>
+                                 <span class="sidebar-right__link-icon">
+                                    <img src="./img/common/pdf.svg" alt="">
+                                 </span>
+                                 <span class="sidebar-right__link-text">Скачать план этажа</span>
+                           </a>
+                        </li>
+                     </ul>
+               </div>
+            </div>
+         </div>
+      </section>
+   
+      <section id="flat-content" class="content flat">
+            <!-- <div class="container"> -->
+               <div class="content__inner">
+                  <div class="flat__options" data-aos="fade-right" data-aos-delay="800">
+                        <div class="flat__tabs">
+                           <div id="flat" class="flat__tabs-item flat__tabs-item--active">С мебелью</div>
+                           <div id="size" class="flat__tabs-item">С размерами</div>
+                           <div id="stage" class="flat__tabs-item">На этаже</div>
+                        </div>
+                        <div class="flat__current">
+                           <div class="flat__current-item">
+                              <p class="flat__current-name">Корпус</p>
+                              <p class="flat__current-value">4</p>
+                           </div>
+                           <div class="flat__current-item">
+                              <p class="flat__current-name">Квартира номер</p>
+                              <p class="flat__current-value">143</p>
+                           </div>
+                        </div>
+                        <ul class="flat__elements">
+                           <li class="flat__elements-item">
+                              <p class="flat__elements-num">317</p>
+                              <p class="flat__elements-name">Коридор</p>
+                              <p class="flat__elements-value">5,58 м²</p>
+                           </li>
+                           <li class="flat__elements-item">
+                              <p class="flat__elements-num">318</p>
+                              <p class="flat__elements-name">Прихожая</p>
+                              <p class="flat__elements-value">22.39 м²</p>
+                           </li>
+                           <li class="flat__elements-item">
+                              <p class="flat__elements-num">319</p>
+                              <p class="flat__elements-name">Кухня-ниша</p>
+                              <p class="flat__elements-value">3.74 м²</p>
+                           </li>
+                           <li class="flat__elements-item">
+                              <p class="flat__elements-num">320</p>
+                              <p class="flat__elements-name">Санузел</p>
+                              <p class="flat__elements-value">5.45 м²</p>
+                           </li>
+                           <li class="flat__elements-item">
+                              <p class="flat__elements-num">321</p>
+                              <p class="flat__elements-name">Гардеробная</p>
+                              <p class="flat__elements-value">2.96 м²</p>
+                           </li>
+                           <li class="flat__elements-item">
+                              <p class="flat__elements-num">322</p>
+                              <p class="flat__elements-name">Санузел</p>
+                              <p class="flat__elements-value">3.06 м²</p>
+                           </li>
+                           <li class="flat__elements-item">
+                              <p class="flat__elements-num">323</p>
+                              <p class="flat__elements-name">Спальня</p>
+                              <p class="flat__elements-value">17.59 м²</p>
+                           </li>
+                           <li class="flat__elements-item">
+                              <p class="flat__elements-num">324</p>
+                              <p class="flat__elements-name">Гостиная</p>
+                              <p class="flat__elements-value">32.37 м²</p>
+                           </li>
+                           <li class="flat__elements-item">
+                              <p class="flat__elements-num">325</p>
+                              <p class="flat__elements-name">Лоджия</p>
+                              <p class="flat__elements-value">3.5 м²</p>
+                           </li>
+                           <li class="flat__elements-item">
+                              <p class="flat__elements-num">326</p>
+                              <p class="flat__elements-name">Лоджия</p>
+                              <p class="flat__elements-value">1.8 м²</p>
+                           </li>
+                           <li class="flat__elements-item">
+                              <p class="flat__elements-num">327</p>
+                              <p class="flat__elements-name">Спальня</p>
+                              <p class="flat__elements-value">16.17 м²</p>
+                           </li>
+                        </ul>
+                        <p class="flat__height">Высота потолков 3.4 м</p>
+                        <div class="flat__tagline">
+                           <img src="./img/flat-single/flat-single-tagline.png" alt="">
+                        </div>
+                  </div>
+                  <div class="flat__plan" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="1000">
+                        <div class="housing__location housing__location--up">
+                           <svg>
+                              <use xlink:href="./img/flats/sprite.svg#arrow-gold"></use>
+                           </svg>
+                           <span>Горы</span>
+                        </div>
+                        <div class="housing__location housing__location--right">
+                           <svg>
+                              <use xlink:href="./img/flats/sprite.svg#arrow-gold"></use>
+                           </svg>
+                           <span>Никитский Ботанический Сад</span>
+                        </div>
+                        <div class="housing__location housing__location--down">
+                           <svg>
+                              <use xlink:href="./img/flats/sprite.svg#arrow-gold"></use>
+                           </svg>
+                           <span>Море</span>
+                        </div>
+                        <div class="housing__location housing__location--left">
+                           <svg>
+                              <use xlink:href="./img/flats/sprite.svg#arrow-gold"></use>
+                           </svg>
+                           <span>Ялта</span>
+                        </div>
+                        <img id="flat-img" src="./img/flat-single/flat-1.png" usemap="#flat">
+                        <img id="size-img" src="./img/flat-single/flat-2.png" usemap="#flat">
+                        <map class="flat-coords" name="flat">
+                           <area coords="396,121,11" shape="circle">
+                           <area coords="313,233,12" shape="circle">
+                           <area coords="291,298,12" shape="circle">
+                           <area coords="256,165,12" shape="circle">
+                           <area coords="116,164,12" shape="circle">
+                           <area coords="159,174,13" shape="circle">
+                           <area coords="128,233,13" shape="circle">
+                           <area coords="248,406,11" shape="circle">
+                           <area coords="128,367,12" shape="circle">
+                           <area coords="182,99,13" shape="circle">
+                           <area coords="266,99,12" shape="circle">
+                        </map>
+                        <div class="sidebar-right__loupe">
+                           <div class="sidebar-right__loupe-circle">
+                              <div class="sidebar-right__loupe-line1"></div>
+                              <div class="sidebar-right__loupe-line2"></div>
+                           </div>
+                           <div class="sidebar-right__loupe-line3"></div>
+                        </div>
+                  </div>
+                  <div class="flat__info" data-aos="fade-left" data-aos-delay="800">
+                        <div class="flat__area">
+                           <p class="flat__area-item">
+                              <span>3</span>
+                              Количество комнат
+                           </p>
+                           <div class="flat__area-wrapper">
+                              <p class="flat__area-item">
+                                    <span>109.03 м²</span>
+                                    Общая площадь
+                              </p>
+                              <p class="flat__area-item">
+                                    <span>66.13 м²</span>
+                                    Жилая площадь
+                              </p>
+                           </div>
+                        </div>
+                        <div class="flat__price">
+                           <span>15 046 140 * ₽</span>
+                           * При единовременной оплате
+                        </div>
+                        <div class="flat__area-price">
+                           <span>138 000 ₽</span>
+                           Стоимость за м²
+                        </div>
+                        <button class="flat__btn">Забронировать</button>
+                        <a class="flat__btn btn flat__btn--light btn--gold" href="#">Подобрать похожие</a>
+                        <a class="flat__link" href="#">
+                           <span class="flat__link-icon">
+                              <img src="./img/common/pdf.svg" alt="">
+                           </span>
+                           <span class="flat__link-text">Скачать план квартиры</span>
+                        </a>
+                        <a class="flat__link" href="#">
+                           <span class="flat__link-icon flat__link-icon--share">
+                              <img src="./img/common/share.svg" alt="">
+                           </span>
+                           <span class="flat__link-text">Поделиться</span>
+                        </a>
+                  </div>
+               </div>
+            <!-- </div> -->
+      </section>
+   
+      <img class="background background__stage" src="./img/flat-single/flat-single-bg.png"
+         data-aos="fade-zoom-in" data-aos-duration="1000" data-aos-delay="2000">
+      <img class="background background__flat" src="./img/flat-single/flat-single-bg-2.png"
+         data-aos="fade-zoom-in" data-aos-duration="1000" data-aos-delay="2000"> 
+   </main>
+
+   @@include('./pages/generic/modals/fixed-buttons.html')
+
+   @@include('./pages/generic/modals/cookie.html')
+
+   @@include('./pages/generic/modals/callback.html')
+
+   @@include('./pages/generic/modals/online.html')
+
+   @@include('./pages/generic/connects/scripts.html')
+</body>
+</html>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="23" height="20" viewBox="0 0 23 20">
+    <g fill="#C2A07C" fill-rule="evenodd">
+        <g>
+            <g>
+                <g>
+                    <g>
+                        <g>
+                            <g stroke="#C2A07C">
+                                <path d="M18.679 3.5c-1.47 0-2.815.528-4.5 1.404C13.136 4.028 11.79 3.5 10.32 3.5c-1.656 0-3.156.672-4.242 1.757C4.993 6.343 4.32 7.843 4.32 9.5c0 .478.057.943.175 1.443.103.419.252.825.451 1.231 1.553 3.636 4.91 6.755 10.03 9.388 5.097-2.824 8.197-6.053 9.254-9.784.289-.703.448-1.472.448-2.278 0-1.657-.672-3.157-1.758-4.243C21.835 4.172 20.335 3.5 18.68 3.5z" transform="translate(-363 -26) translate(0 12) translate(360) translate(0 11)"/>
+                            </g>
+                            <text fill="#FFF" font-family="MuseoSansCyrillic-500, Museo Sans Cyrillic" font-size="10" font-weight="500" letter-spacing="-.16" transform="translate(-363 -26) translate(0 12) translate(360)">
+                                <tspan x="11.03" y="8">4</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

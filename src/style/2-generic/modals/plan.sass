@@ -1,0 +1,95 @@
+#plan
+   height: 597px
+   padding: 40px
+   box-shadow: 0 4px 22px 0 rgba(0, 0, 0, 0.16)
+   display: flex
+   align-items: center
+   gap: 50px
+   justify-content: space-between
+   font-family: 'Museo Sans', sans-serif
+   color: $dark-gray
+   font-weight: 600
+   .plan__img > img 
+      max-width: 400px
+      max-height: 500px
+   .plan__info 
+      width: 250px
+      height: 100%
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      .compass 
+         align-self: flex-end
+         position: relative
+         top: 0
+         right: 0
+      .table-plan 
+         display: flex
+         width: 100%
+         justify-content: space-between
+         font-size: 1rem
+         line-height: 1.2rem
+         &__value, &__attrbute 
+            margin-bottom: 10px
+            &:last-child 
+               margin-bottom: unset
+         &__attrbute
+            color: rgba($dark-gray, .6)
+         &__value
+            text-align: right
+
+      .price-plan 
+         padding: 15px 0
+         border-bottom: 1px solid $gold
+         border-top: 1px solid $gold
+
+         &__full
+            font-family: 'Orchidea Pro', sans-serif
+            font-size: 2rem
+            font-weight: 500
+            line-height: 0.83
+            margin-bottom: 10px
+            color: $dark
+
+         &__footnote 
+            font-size: .9rem
+            line-height: 1.1rem
+            color: rgba($dark-gray, .6)
+
+      .metr-price__value 
+         font-family: 'Orchidea Pro', sans-serif
+         font-size: 1.3rem
+         font-weight: 500
+         color: $dark
+
+      .metr-price__name 
+         font-size: 1rem
+         line-height: 1.3rem
+         color: $dark
+         font-weight: 300
+
+      .plan__btn 
+         color: $white
+         padding: 15px 0
+         font-size: 1rem
+         width: 100%
+         background-color: $gold
+
+      .plan__download, .plan__share 
+         position: relative
+         display: block
+         line-height: 2rem
+         padding-left: 30px
+         color: $dark-gray
+
+      .plan__download::before 
+         content: url(../img/common/pdf.svg)
+         position: absolute
+         left: 0
+         height: 25px
+
+      .plan__share::before 
+         content: url(../img/common/share.svg)
+         position: absolute
+         left: 0
+         height: 25px

@@ -1,0 +1,51 @@
+.compass
+   width: 71px
+   height: 71px
+   border: 1px solid $gold
+   border-right: 1px solid transparent
+   border-top: 1px solid transparent
+   border-radius: 50%
+   display: flex
+   justify-content: center
+   align-items: center
+   position: relative
+   z-index: 2
+   &::before, 
+   &::after 
+      content: ''
+      width: 71px
+      height: 71px
+      border: 1px solid $gold
+      border-right: 1px solid transparent
+      border-top: 1px solid transparent
+      border-radius: 50%
+      position: absolute
+   
+   &::before 
+      transform: rotate(80deg)
+   
+   &::after 
+      transform: rotate(-62deg)
+   
+   svg 
+      width: 20px
+      height: 22px
+      color: $white
+      animation: rotate 3s ease
+   
+   span 
+      position: absolute
+      top: 2px
+      right: 2px
+      color: $white
+      font-size: 13px
+      line-height: 24px
+      letter-spacing: -0.1px
+      font-weight: 700
+   
+   &--light 
+      position: absolute
+      top: 106px
+      right: 52px
+      svg, span 
+         color: $gold

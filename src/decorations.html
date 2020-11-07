@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Варианты отделки</title>
+   <link rel="stylesheet" href="./style/magnific-popup.css">
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+   <link rel="stylesheet" href="./style/aos.css">
+   <link rel="stylesheet" href="./style/decorations.css">
+</head>
+
+<body class="page page--light decoration-bg">
+
+   @@include('./pages/generic/header.html', { "logo": "logo-min-gold.svg", "mod": "header--light" })
+   @@include('./pages/generic/submenu.html', { "decor": "class='submenu__item--active'" })
+
+   <main class="decorations">
+      <h1 class="decorations__title">Варианты предчистовой отделки</h1>
+
+      <section class="decorations__column">
+         <div class="slider">
+            <div class="slider__content">
+               <div class="slider__image">
+                  <img src="./img/decorations/chernovaya.jpg" alt="Пример отделки">
+               </div>
+
+               <div class="slider__title">
+                  <h2 class="slider__text">Черновая отделка</h2>
+                  <div class="slider__controls">
+                     <button class="slider__button slider__button--left">
+                        <img src="./img/decorations/arrow-left.svg">
+                     </button>
+                     <p class="slider__slides">01 <span>/ 5</span></p>
+                     <button class="slider__button slider__button--right">
+                        <img src="./img/decorations/arrow-right.svg">
+                     </button>
+                  </div>
+               </div>
+
+            </div>
+
+            <article class="slider__info">
+               <p>
+                  Подготовленное помещение к финишному декоративному оформлению. Возведены межкомнатные перегородки из
+                  стеновых газобетонных камней 100 мм, установлены входные двери, двухкамерные стеклопакеты с
+                  энергосберегающим стеклом и «теплый» алюминиевый профиль в оконнодверных конструкциях.
+               </p>
+               <p>
+                  Проведена разводка систем водоснабжения и канализации к точкам подключения, радиаторная система
+                  отопления подключена к автономной крышной котельной, электричество заведено в квартиру.
+               </p>
+            </article>
+         </div>
+      </section>
+
+      <section class="decorations__column">
+         <div class="slider">
+            <div class="slider__content">
+               <div class="slider__image">
+                  <img src="./img/decorations/whitebox.jpg" alt="Пример отделки">
+               </div>
+
+               <div class="slider__title">
+                  <h2 class="slider__text">White box</h2>
+                  <div class="slider__controls">
+                     <button class="slider__button slider__button--left">
+                        <img src="./img/decorations/arrow-left.svg">
+                     </button>
+                     <p class="slider__slides">01 <span>/ 5</span></p>
+                     <button class="slider__button slider__button--right">
+                        <img src="./img/decorations/arrow-right.svg">
+                     </button>
+                  </div>
+               </div>
+
+            </div>
+
+            <article class="slider__info">
+               <p>
+                  Начиная от 6 этажа и выше квартиры выполнены с отделкой White box.
+               </p>
+               <p>
+                  Отделка включает в себя бетонную цементно–песчаную стяжку пола 50 мм по звукоизоляционному слою,
+                  готовую для укладки финишного покрытия, выравнивание откосов в оконно-дверных конструкциях,
+                  выравнивание, грунтовку и гипсовую штукатурку стен. Подготовку потолков, проведение водопровода,
+                  канализации и системы отопления.
+               </p>
+            </article>
+         </div>
+      </section>
+
+      <div class="decorations__row">
+         <button class=" btn choose">Выбрать квартиру</button>
+      </div>
+   </main>
+
+   @@include('./pages/generic/modals/fixed-buttons.html')
+
+   @@include('./pages/generic/modals/cookie.html')
+
+   @@include('./pages/generic/modals/callback.html')
+
+   @@include('./pages/generic/connects/scripts.html')
+</body>
+
+</html>

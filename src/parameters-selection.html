@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Подбор по параметрам</title>
+   <link rel="stylesheet" href="./style/magnific-popup.css">
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+   <link rel="stylesheet" href="./style/aos.css">
+   <link rel="stylesheet" href="./style/parameters-selection.css">
+</head>
+
+<body class="page page--light">
+
+   @@include('./pages/generic/header.html', { "logo": "logo-min-gold.svg", "mod": "header--light" })
+   @@include('./pages/generic/submenu.html', { "select": "class='submenu__item--active'" })
+
+   <main class="parameters-selection">
+      <section class="selectors">
+
+         <div class="selectors__block">
+            <h6 class="selectors__title">Тип недвижимости</h6>
+            <label class="label-container label-container--btn">
+               <input class="selectors__input" type="radio" checked name="apartment" value="1"><span class="checked checked--btn">Квартиры</span>
+            </label>
+            <label class="label-container label-container--btn">
+               <input class="selectors__input" type="radio" name="apartment" value="2"><span class="checked checked--btn">Апартаменты</span>
+            </label>
+         </div>
+
+         <div class="selectors__block"> 
+            <h6 class="selectors__title">Комнат</h6>
+            <label class="label-container label-container--radio">
+               <input class="selectors__input" checked type="radio" value="1" name="floor"><span class="checked checked--radio">1</span>
+            </label>
+            <label class="label-container label-container--radio">
+               <input class="selectors__input" type="radio" value="2" name="floor"><span class="checked checked--radio">2</span>
+            </label>
+            <label class="label-container label-container--radio">
+               <input class="selectors__input" type="radio" value="3" name="floor"><span class="checked checked--radio">3</span>
+            </label>
+            <label class="label-container label-container--radio">
+               <input class="selectors__input" type="radio" value="4" name="floor"><span class="checked checked--radio">4</span>
+            </label>
+         </div>
+
+         <div class="selectors__block">
+            <h6 class="selectors__title">Этаж</h6>
+            <input class="selectors__range range-left" type="range" name="floor1" value="1" step="1" min="1" max="10">
+            <input class="selectors__range range-right" type="range" name="floor2" value="10" step="1" min="1" max="10">
+         </div>
+
+         <div class="selectors__block">
+            <h6 class="selectors__title">Общая площадь (м<sup>2</sup>)</h6>
+            <input class="selectors__range" type="range" name="square1" value="40" min="40" max="140">
+            <input class="selectors__range" type="range" name="square2" value="140" min="40" max="140">
+         </div>
+
+         <div class="selectors__block">
+            <h6 class="selectors__title">Отделка <span class="selectors__title--decoration-icon">&#9711;</span></h6> 
+
+            <label class="label-container label-container--btn">
+               <input class="selectors__input" type="radio" checked name="decoration" value="1"><span class="checked checked--btn">White box</span>
+            </label>
+
+            <label class="label-container label-container--btn">
+               <input class="selectors__input" type="radio" name="decoration" value="2"><span class="checked checked--btn">Черновая</span>
+            </label>
+         </div>
+
+         <div class="selectors__block">
+            <h6 class="selectors__title">Общая стоимость (млн.&#x20bd;)</h6> 
+            <input class="selectors__range" type="range" name="full-price1" value="4" min="4" max="23">
+            <input class="selectors__range" type="range" name="full-price2" value="23" min="4" max="23">
+         </div>
+
+      </section>
+
+      <section class="table-container">
+         <table>
+            <caption>
+               <article class="table-container__title">
+                  <p class="table-container__title--grid-1"><span>5</span> квартир</p>
+                  <div>
+                     <p class="table-container__title--grid-2">Подходящих</p>
+                     <p class="table-container__title--grid-2">По параметрам</p>
+                  </div>
+               </article>
+            </caption>
+            <thead class="table__head">
+               <tr>
+                  <th>№</th>
+                  <th class="td--center">Кол-во <br> комнат</th>
+                  <th class="td--center">Корпус</th>
+                  <th class="td--center">Этаж</th>
+                  <th>Общая <br> площадь, м<sup>2</sup></th>
+                  <th>Отделка</th>
+                  <th class="table-sorting">Общая <br> стоимость</th>
+                  <th>Стоимость <br> за 1 м<sup>2</sup></th>
+                  <th class="td--center">Планировка</th>
+                  <th class="td--center">На этаже</th>
+                  <!-- <th>Просмотр</th> -->
+                  <th></th>
+                  <th></th>
+               </tr>
+            </thead>
+            <tbody class="table__body">
+               <tr>
+                  <td>143</td>
+                  <td class="td--center">3</td>
+                  <td class="td--center">4</td>
+                  <td class="td--center">4</td>
+                  <td>109.03</td>
+                  <td>Черновая</td>
+                  <td>15 046 140 <sup>&#x20bd;</sup></td>
+                  <td>138 000 <sup>&#x20bd;</sup></td>
+                  <td><button class="plan--fav"><svg><use xlink:href="./img/table/sprite.svg#layout"></use></svg></button></td>
+                  <td><a href="./flat-single.html"><svg><use xlink:href="./img/table/sprite.svg#eye"></use></svg></a></td>
+                  <!-- <td><button class="td--big">На генплане</button></td> -->
+                  <td><button class="td--big tobook">Забронировать</button></td>
+                  <td><label class="cheackbox-heart"><input type="checkbox"><span class="cheackbox-heart__box"></span></label></td>
+               </tr>
+               <tr>
+                  <td>155</td>
+                  <td class="td--center">3</td>
+                  <td class="td--center">4</td>
+                  <td class="td--center">7</td>
+                  <td>109.03</td>
+                  <td>White Box</td>
+                  <td>15 809 350 <sup>&#x20bd;</sup></td>
+                  <td>145 000 <sup>&#x20bd;</sup></td>
+                  <td><button class="plan--fav"><svg><use xlink:href="./img/table/sprite.svg#layout"></use></svg></button></td>
+                  <td><a href="./flat-single.html"><svg><use xlink:href="./img/table/sprite.svg#eye"></use></svg></a></td>
+                  <!-- <td><button class="td--big">На генплане</button></td> -->
+                  <td><button class="td--big tobook">Забронировать</button></td>
+                  <td><label class="cheackbox-heart"><input checked type="checkbox"><span class="cheackbox-heart__box"></span></label></td>
+               </tr>
+               <tr>
+                  <td>123</td>
+                  <td class="td--center">3</td>
+                  <td class="td--center">1</td>
+                  <td class="td--center">5</td>
+                  <td>128.31</td>
+                  <td>Черновая</td>
+                  <td>17 706 780 <sup>&#x20bd;</sup></td>
+                  <td>138 000 <sup>&#x20bd;</sup></td>
+                  <td><button class="plan--fav"><svg><use xlink:href="./img/table/sprite.svg#layout"></use></svg></button></td>
+                  <td><a href="./flat-single.html"><svg><use xlink:href="./img/table/sprite.svg#eye"></use></svg></a></td>
+                  <!-- <td><button class="td--big">На генплане</button></td> -->
+                  <td><button class="td--big tobook">Забронировать</button></td>
+                  <td><label class="cheackbox-heart"><input type="checkbox"><span class="cheackbox-heart__box"></span></label></td>
+               </tr>
+               <tr>
+                  <td>177</td>
+                  <td class="td--center">3</td>
+                  <td class="td--center">6</td>
+                  <td class="td--center">2</td>
+                  <td>108.17</td>
+                  <td>Черновая</td>
+                  <td>14 927 460 <sup>&#x20bd;</sup></td>
+                  <td>138 000 <sup>&#x20bd;</sup></td>
+                  <td><button class="plan--fav"><svg><use xlink:href="./img/table/sprite.svg#layout"></use></svg></button></td>
+                  <td><a href="./flat-single.html"><svg><use xlink:href="./img/table/sprite.svg#eye"></use></svg></a></td>
+                  <!-- <td><button class="td--big">На генплане</button></td> -->
+                  <td><button class="td--big tobook">Забронировать</button></td>
+                  <td><label class="cheackbox-heart"><input type="checkbox"><span class="cheackbox-heart__box"></span></label></td>
+               </tr>
+               <tr>
+                  <td>17</td>
+                  <td class="td--center">3</td>
+                  <td class="td--center">3</td>
+                  <td class="td--center">9</td>
+                  <td>85.39</td>
+                  <td>White Box</td>
+                  <td>12 808 500 <sup>&#x20bd;</sup></td>
+                  <td>150 000 <sup>&#x20bd;</sup></td>
+                  <td><button class="plan--fav"><svg><use xlink:href="./img/table/sprite.svg#layout"></use></svg></button></td>
+                  <td><a href="./flat-single.html"><svg><use xlink:href="./img/table/sprite.svg#eye"></use></svg></a></td>
+                  <!-- <td><button class="td--big">На генплане</button></td> -->
+                  <td><button class="td--big tobook">Забронировать</button></td>
+                  <td><label class="cheackbox-heart"><input type="checkbox"><span class="cheackbox-heart__box"></span></label></td>
+               </tr>
+            </tbody>
+         </table>
+      </section>
+   </main>
+
+   @@include('./pages/generic/modals/fixed-buttons.html')
+
+   @@include('./pages/generic/modals/cookie.html')
+
+   @@include('./pages/generic/modals/callback.html')
+
+   @@include('./pages/generic/modals/online.html')
+
+   @@include('./pages/generic/modals/plan.html')
+   
+   @@include('./pages/generic/modals/tobook.html')
+
+   @@include('./pages/generic/connects/scripts.html')
+</body>
+</html>

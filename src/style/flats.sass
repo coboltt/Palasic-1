@@ -1,0 +1,710 @@
+@import ./4-templates/#template
+
+@import ./2-generic/elements/compass
+
+.housing 
+   width: 100%
+   height: 100vh
+   position: relative
+   padding: 97px 50px 0
+   display: flex
+   justify-content: space-between
+   background-repeat: no-repeat
+   background-position: top
+   background-size: cover
+   overflow: hidden
+   &__text 
+      width: 462px
+      font-size: 15px
+      font-weight: 300
+      line-height: 24px
+      letter-spacing: -0.11px
+      color: $white
+   
+   &__items 
+      position: absolute
+      top: 0
+      bottom: 0
+      left: 0
+      right: 0
+      background-color: rgba($dark, 0.3)
+   
+   &__link 
+      display: inline-block
+      position: absolute
+      &-1 
+         top: 99px
+         left: 39%
+         .housing__item 
+               top: 59%
+               left: 44%
+         
+         @media screen and (max-width: 1366px) 
+               top: 97px
+               img 
+                  width: 438px
+               
+         
+         @media screen and (min-width: 1900px) 
+               top: 132px
+               img 
+                  width: 615px
+               
+         
+         @media screen and (min-width: 2550px) 
+               top: 179px
+               img 
+                  width: 821px
+               
+         
+      
+      &-2 
+         top: 150px
+         left: 68.7%
+         .housing__item 
+               top: 36%
+               left: 37%
+         
+         @media screen and (max-width: 1366px) 
+               top: 142px
+               left: 68.6%
+               img 
+                  width: 181px
+               
+         
+         @media screen and (min-width: 1900px) 
+               top: 200px
+               left: 68.7%
+               img 
+                  width: 251px
+               
+         
+         @media screen and (min-width: 2550px) 
+               top: 267px
+               img 
+                  width: 330px
+               
+         
+      
+      &-3 
+         top: 173px
+         left: 77.5%
+         .housing__item 
+               top: 38%
+               left: 35%
+         
+         @media screen and (max-width: 1366px) 
+               top: 164px
+               left: 77.5%
+               img 
+                  width: 190px
+               
+         
+         @media screen and (min-width: 1900px) 
+               top: 230px
+               left: 77.4%
+               img 
+                  width: 269px
+               
+         
+         @media screen and (min-width: 2550px) 
+               top: 306px
+               left: 77.6%
+               img 
+                  width: 354px
+               
+         
+      
+      &-4 
+         top: 191px
+         left: 13%
+         .housing__item 
+               top: 42%
+               left: 49%
+         
+         @media screen and (max-width: 1366px) 
+               top: 181px
+               left: 13%
+               img 
+                  width: 253px
+               
+         
+         @media screen and (min-width: 1900px) 
+               top: 255px
+               left: 13%
+               img 
+                  width: 356px
+               
+         
+         @media screen and (min-width: 2550px) 
+               top: 339px
+               left: 13%
+               img 
+                  width: 475px
+               
+         
+      
+      &-5 
+         top: 506px
+         left: 32%
+         .housing__item 
+               top: 38%
+               left: 39%
+         
+         @media screen and (max-width: 1366px) 
+               top: 477px
+               left: 31.6%
+               img 
+                  width: 234px
+               
+         
+         @media screen and (min-width: 1900px) 
+               top: 672px
+               left: 31.5%
+               img 
+                  width: 327px
+               
+         
+         @media screen and (min-width: 2550px) 
+               top: 896px
+               img 
+                  width: 437px
+               
+         
+      
+      &-6 
+         top: 496px
+         left: 48.1%
+         .housing__item 
+               top: 39%
+               left: 44%
+         
+         @media screen and (max-width: 1366px) 
+               top: 467px
+               left: 48.3%
+               img 
+                  width: 390px
+               
+         
+         @media screen and (min-width: 1900px) 
+               top: 660px
+               left: 48.1%
+               img 
+                  width: 556px
+               
+         
+         @media screen and (min-width: 2550px) 
+               top: 878px
+               img 
+                  width: 739px
+               
+         
+      
+      &-7 
+         top: 465px
+         left: 75.9%
+         .housing__item 
+               top: 43%
+               left: 35%
+         
+         @media screen and (max-width: 1366px) 
+               top: 435px
+               left: 75.9%
+               img 
+                  width: 167px
+               
+         
+         @media screen and (min-width: 1900px) 
+               top: 620px
+               left: 76.1%
+               img 
+                  width: 224px
+               
+         
+         @media screen and (min-width: 2550px) 
+               top: 820px
+               left: 76%
+               img 
+                  width: 304px
+               
+         
+      
+      img 
+         opacity: 0
+         transition: all 0.5s
+      
+      &:hover 
+         img 
+               opacity: 1
+         
+         .housing__circle 
+               z-index: 4
+         
+         .housing__info 
+               opacity: 1
+               z-index: 3
+               width: 324px
+               height: auto
+               .housing__info-title,
+               .housing__info-value 
+                  font-size: 24px
+               
+               .housing__info-name 
+                  font-size: 15px
+               
+         
+      
+   
+   &__item 
+      position: absolute
+      top: 39%
+      left: 53%
+   
+   &__circle 
+      width: 35px
+      height: 35px
+      display: flex
+      justify-content: center
+      align-items: center
+      background-color: $gold
+      border-radius: 50%
+      position: relative
+      z-index: 2
+      span 
+         font-family: 'Orchidea Pro'
+         font-size: 20px
+         font-weight: 500
+         line-height: 46px
+         letter-spacing: -0.15px
+         color: $white
+      
+      &::before 
+         content: ''
+         width: 47px
+         height: 47px
+         position: absolute
+         top: 50%
+         left: 50%
+         transform: translate(-50%, -50%)
+         background-color: rgba($gold, 0.45)
+         border-radius: 50%
+         z-index: -1
+         animation: pulse 2s linear infinite
+      
+   
+   &__info 
+      width: 0
+      height: 0
+      overflow: hidden
+      padding: 21px 26px 8px
+      background-image: url(../img/flats/housing-info.png)
+      background-repeat: no-repeat
+      background-size: cover
+      background-position: top center
+      color: $dark
+      position: absolute
+      top: 15px
+      left: 15px
+      z-index: 1
+      opacity: 0
+      transition: all 0.5s
+      &--reverse 
+         top: auto
+         left: auto
+         bottom: 15px
+         right: 15px
+      
+      &--reverse-bottom 
+         left: auto
+         right: 15px
+      
+      &-title,
+      &-value 
+         font-family: 'Orchidea Pro'
+         font-size: 0
+         font-weight: 500
+         line-height: 30px
+         letter-spacing: -0.03px
+         text-transform: uppercase
+      
+      &-title 
+         padding-bottom: 14px
+         border-bottom: 1px solid $gold
+         white-space: nowrap
+      
+      &-descr 
+         margin-top: 12px
+         display: flex
+         flex-wrap: nowrap
+      
+      &-item + &-item 
+         margin-left: 68px
+      
+      &-name 
+         //font-size: 15px
+         font-size: 0
+         line-height: 24px
+         letter-spacing: -0.11px
+         white-space: nowrap
+      
+   
+   &__location 
+      position: absolute
+      display: flex
+      justify-content: center
+      align-items: center
+      svg 
+         width: 19px
+         height: 35px
+      
+      span 
+         font-size: 13px
+         font-weight: 500
+         line-height: 16px
+         letter-spacing: -0.21px
+         color: $white
+      
+      &--up 
+         flex-direction: column
+         top: 10%
+         right: 26%
+         svg 
+               transform: rotate(-90deg)
+         
+      
+      &--right 
+         flex-direction: row-reverse
+         top: 47%
+         right: 1%
+         span 
+               display: block
+               width: 103px
+               text-align: right
+               margin-right: 15px
+         
+      
+      &--down 
+         flex-direction: column-reverse
+         bottom: 10%
+         right: 4%
+         svg 
+               transform: rotate(90deg)
+         
+      
+      &--left 
+         top: 47%
+         left: 2%
+         svg 
+               transform: rotate(-180deg)
+
+.stages 
+   width: 100%
+   height: 100vh
+   padding: 97px 50px 0 84px
+   position: relative
+   display: flex
+   display: none
+   justify-content: space-between
+   background-repeat: no-repeat
+   background-position: top
+   background-size: cover
+   overflow: hidden
+   &__back 
+      z-index: 11
+      display: inline-flex
+      justify-content: center
+      align-items: center
+      height: 20px
+      svg 
+         width: 17px
+         height: 23px
+         transform: rotate(-180deg)
+      
+      span 
+         margin-left: 15px
+         font-size: 13px
+         font-weight: 500
+         line-height: 43px
+         letter-spacing: -0.21px
+         color: $white
+      
+   
+   &__items 
+      position: absolute
+      top: 0
+      bottom: 0
+      left: 0
+      right: 0
+      //background-color: rgba($dark, 0.3)
+      img 
+         position: absolute
+         opacity: 0
+         width: 100%
+         height: 100%
+         object-fit: cover
+         transition: opacity 0.2s
+      
+   
+   &__link 
+      position: absolute
+      z-index: 10
+      height: 25px
+      width: 260px
+      left: 474px
+      @media screen and (min-width: 1900px) 
+         width: 350px
+         left: 647px
+      
+      @media screen and (max-width: 1366px) 
+         width: 230px
+         left: 471px
+      
+      &:hover 
+         z-index: 12
+         img, .stages__info 
+               opacity: 1
+               z-index: 1
+               pointer-events: auto
+         
+      
+      &-1 
+         top: 594px
+         &:hover ~ .stages__link-1--bg 
+               opacity: 1
+         
+         @media screen and (max-width: 1366px) 
+               top: 504px
+         
+         @media screen and (min-width: 1900px) 
+               top: 754px
+         
+         @media screen and (max-height: 630px) 
+               top: 474px
+         
+      
+      &-2 
+         top: 551px
+         &:hover ~ .stages__link-2--bg 
+               opacity: 1
+         
+         @media screen and (max-width: 1366px) 
+               top: 463px
+         
+         @media screen and (min-width: 1900px) 
+               top: 701px
+         
+         @media screen and (max-height: 630px) 
+               top: 444px
+         
+      
+      &-3 
+         top: 507px
+         &:hover ~ .stages__link-3--bg 
+               opacity: 1
+         
+         @media screen and (max-width: 1366px) 
+               top: 428px
+         
+         @media screen and (min-width: 1900px) 
+               top: 646px
+         
+         @media screen and (max-height: 630px) 
+               top: 414px
+         
+      
+      &-4 
+         top: 459px
+         &:hover ~ .stages__link-4--bg 
+               opacity: 1
+         
+         @media screen and (max-width: 1366px) 
+               top: 391px
+         
+         @media screen and (min-width: 1900px) 
+               top: 582px
+         
+         @media screen and (max-height: 630px) 
+               top: 374px
+         
+      
+      &-5 
+         top: 418px
+         &:hover ~ .stages__link-5--bg 
+               opacity: 1
+         
+         @media screen and (max-width: 1366px) 
+               top: 358px
+         
+         @media screen and (min-width: 1900px) 
+               top: 532px
+         
+         @media screen and (max-height: 630px) 
+               top: 344px
+         
+      
+      &-6 
+         top: 378px
+         &:hover ~ .stages__link-6--bg 
+               opacity: 1
+         
+         @media screen and (max-width: 1366px) 
+               top: 322px
+         
+         @media screen and (min-width: 1900px) 
+               top: 480px
+         
+         @media screen and (max-height: 630px) 
+               top: 307px
+         
+      
+      &-7 
+         top: 336px
+         &:hover ~ .stages__link-7--bg 
+               opacity: 1
+         
+         @media screen and (max-width: 1366px) 
+               top: 286px
+         
+         @media screen and (min-width: 1900px) 
+               top: 431px
+         
+         @media screen and (max-height: 630px) 
+               top: 276px
+         
+      
+      &-8 
+         top: 295px
+         &:hover ~ .stages__link-8--bg 
+               opacity: 1
+         
+         @media screen and (max-width: 1366px) 
+               top: 252px
+         
+         @media screen and (min-width: 1900px) 
+               top: 375px
+         
+         @media screen and (max-height: 630px) 
+               top: 245px
+         
+      
+      &-9 
+         top: 257px
+         &:hover ~ .stages__link-9--bg 
+               opacity: 1
+         
+         @media screen and (max-width: 1366px) 
+               top: 217px
+         
+         @media screen and (min-width: 1900px) 
+               top: 327px
+         
+         @media screen and (max-height: 630px) 
+               top: 207px
+         
+      
+      &-10 
+         top: 218px
+         &:hover ~ .stages__link-10--bg 
+               opacity: 1
+         
+         @media screen and (max-width: 1366px) 
+               top: 184px
+         
+         @media screen and (min-width: 1900px) 
+               top: 278px
+         
+         @media screen and (max-height: 630px) 
+               top: 168px
+         
+      
+      &-11 
+         top: 175px
+         &:hover ~ .stages__link-11--bg 
+               opacity: 1
+         
+         @media screen and (max-width: 1366px) 
+               top: 146px
+         
+         @media screen and (min-width: 1900px) 
+               top: 229px
+         
+         @media screen and (max-height: 630px) 
+               top: 138px
+         
+      
+   
+   &__info 
+      width: 263px
+      padding: 11px 21px 20px
+      position: absolute
+      top: -61px
+      left: -320px
+      opacity: 0
+      z-index: -1
+      pointer-events: none
+      background-image: url(../img/flats/stages/stages-info.png)
+      background-repeat: no-repeat
+      background-size: cover
+      transition: opacity 0.2s
+      &-housing 
+         font-family: 'Orchidea Pro'
+         font-size: 15px
+         font-weight: 500
+         line-height: 30px
+         letter-spacing: -0.02px
+         text-transform: uppercase
+         color: #a3896d
+      
+      &-stage 
+         margin: 9px 0 12px
+         font-family: 'Orchidea Pro'
+         font-size: 24px
+         font-weight: 500
+         line-height: 30px
+         letter-spacing: -0.03px
+         text-transform: uppercase
+         color: $dark
+      
+      &-flats 
+         font-size: 15px
+         line-height: 24px
+         letter-spacing: -0.11px
+         color: $dark
+         span 
+               margin-right: 10px
+               font-family: 'Orchidea Pro'
+               font-size: 24px
+               font-weight: 500
+               line-height: 30px
+               letter-spacing: -0.03px
+
+.gradient 
+   width: 948px
+   height: 260px
+   position: absolute
+   z-index: 1
+   bottom: 0
+   right: 0
+   opacity: 0.61
+   background-image: linear-gradient(161deg, rgba(37, 47, 62, 0) 54%, $dark 86%)
+
+@keyframes pulse 
+   0% 
+      transform: translate(-50%, -50%) scale(0.8)
+   
+   50% 
+      transform: translate(-50%, -50%) scale(1)
+   
+   100% 
+      transform: translate(-50%, -50%) scale(0.8)
+   
+@keyframes rotate 
+   0% 
+      transform: rotate(-45deg)
+   
+   40% 
+      transform: rotate(415deg)
+   
+   100% 
+      transform: rotate(360deg)
+   

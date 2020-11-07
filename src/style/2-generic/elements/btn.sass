@@ -1,0 +1,25 @@
+.btn
+   position: relative
+   padding: 13px 45px
+   display: flex
+   justify-content: center
+   align-items: center
+   font-size: 1rem
+   font-weight: 500
+   background-color: transparent
+   border: 1px solid rgba($white, .4)
+   transition: all 0.2s
+   font-family: 'Museo Sans'
+   &::before
+      content: ''
+      width: 0
+      height: 100%
+      background-color: $gold
+      position: absolute
+      left: 0
+      z-index: -1
+      transition: width 0.3s
+   &:hover
+      border: 1px solid $gold
+      &::before
+         width: 100%

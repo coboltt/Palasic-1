@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Избранное</title>
+   <link rel="stylesheet" href="./style/magnific-popup.css">
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+   <link rel="stylesheet" href="./style/aos.css">
+   <link rel="stylesheet" href="./style/favorites.css">
+</head>
+
+<body class="page page--light" onload="switchCheckbox()">
+
+   @@include('./pages/generic/header.html', { "logo": "logo-min-gold.svg", "mod": "header--light" })
+
+   <main class="favorites">
+         <table class="table favorites__table">
+            <caption>Избранное</caption>
+            <thead class="table__head">
+               <tr>
+                  <th style="vertical-align: middle;"><label><input id="switcher" type="checkbox"><span></span></label></th>
+                  <th>№</th>
+                  <th class="td--center">Кол-во <br> комнат</th>
+                  <th class="td--center">Корпус</th>
+                  <th class="td--center">Этаж</th>
+                  <th>Общая <br> площадь, м<sup>2</sup></th>
+                  <th>Отделка</th>
+                  <th class="table-sorting">Общая <br> стоимость</th>
+                  <th>Стоимость <br> за 1 м<sup>2</sup></th>
+                  <th class="td--center">Планировка</th>
+                  <th class="td--center">На этаже</th>
+                  <!-- <th>Просмотр</th> -->
+                  <th></th>
+                  <th></th>
+               </tr>
+            </thead>
+            <tbody class="table__body">
+               <tr>
+                  <td><label><input id="table-checkbox" type="checkbox"><span></span></label></td>
+                  <td>143</td>
+                  <td class="td--center">3</td>
+                  <td class="td--center">4</td>
+                  <td class="td--center">4</td>
+                  <td>109.03</td>
+                  <td>Черновая</td>
+                  <td>15 046 140 <sup>&#x20bd;</sup></td>
+                  <td>138 000 <sup>&#x20bd;</sup></td>
+                  <td><button class="plan--fav"><svg><use xlink:href="./img/table/sprite.svg#layout"></use></svg></button></td>
+                  <td><a href="./flat-single.html"><svg><use xlink:href="./img/table/sprite.svg#eye"></use></svg></a></td>
+                  <!-- <td><button class="td--big">На генплане</button></td> -->
+                  <td><button class="td--big tobook">Забронировать</button></td>
+                  <td><label class="cheackbox-heart"><input checked type="checkbox"><span class="cheackbox-heart__box"></span></label></td>
+               </tr>
+               <tr>
+                  <td><label><input id="table-checkbox" type="checkbox"><span></span></label></td>
+                  <td>155</td>
+                  <td class="td--center">3</td>
+                  <td class="td--center">4</td>
+                  <td class="td--center">7</td>
+                  <td>109.03</td>
+                  <td>White Box</td>
+                  <td>15 809 350 <sup>&#x20bd;</sup></td>
+                  <td>145 000 <sup>&#x20bd;</sup></td>
+                  <td><button class="plan--fav"><svg><use xlink:href="./img/table/sprite.svg#layout"></use></svg></button></td>
+                  <td><a href="./flat-single.html"><svg><use xlink:href="./img/table/sprite.svg#eye"></use></svg></a></td>
+                  <!-- <td><button class="td--big">На генплане</button></td> -->
+                  <td><button class="td--big tobook">Забронировать</button></td>
+                  <td><label class="cheackbox-heart"><input checked type="checkbox"><span class="cheackbox-heart__box"></span></label></td>
+               </tr>
+               <tr>
+                  <td><label><input id="table-checkbox" type="checkbox"><span></span></label></td>
+                  <td>123</td>
+                  <td class="td--center">3</td>
+                  <td class="td--center">1</td>
+                  <td class="td--center">5</td>
+                  <td>128.31</td>
+                  <td>Черновая</td>
+                  <td>17 706 780 <sup>&#x20bd;</sup></td>
+                  <td>138 000 <sup>&#x20bd;</sup></td>
+                  <td><button class="plan--fav"><svg><use xlink:href="./img/table/sprite.svg#layout"></use></svg></button></td>
+                  <td><a href="./flat-single.html"><svg><use xlink:href="./img/table/sprite.svg#eye"></use></svg></a></td>
+                  <!-- <td><button class="td--big">На генплане</button></td> -->
+                  <td><button class="td--big tobook">Забронировать</button></td>
+                  <td><label class="cheackbox-heart"><input checked type="checkbox"><span class="cheackbox-heart__box"></span></label></td>
+               </tr>
+            </tbody>
+         </table>
+
+         <button class="btn favorites__btn">Сохранить</button>
+   </main>
+
+   @@include('./pages/generic/modals/fixed-buttons.html')
+
+   @@include('./pages/generic/modals/cookie.html')
+   
+   @@include('./pages/generic/modals/callback.html')
+   
+   @@include('./pages/generic/modals/online.html')
+
+   @@include('./pages/generic/modals/plan.html')
+   
+   @@include('./pages/generic/modals/tobook.html')
+
+   @@include('./pages/generic/connects/scripts.html')
+</body>
+
+</html>

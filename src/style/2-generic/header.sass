@@ -1,0 +1,232 @@
+.header
+   width: 100%
+   position: fixed
+   z-index: 2
+
+   &__container
+      margin: 0 auto
+      width: 90%
+      display: flex
+      justify-content: space-between
+
+   &__logo
+      display: flex
+      justify-content: center
+      width: 100%
+      height: 70px
+      position: absolute
+      z-index: 0
+      top: 16px
+      left: 50%
+      transform: translateX(-50%)
+      a
+         position: relative
+
+      &::before,
+      &::after
+         content: ''
+         width: calc(50% - 60px)
+         height: 1px
+         background-color: #fff
+         opacity: 0.5
+         position: absolute
+         top: 48px
+      &::before
+         right: 0
+      &::after
+         left: 0
+
+   &__menu
+      display: flex
+      width: 50%
+      height: 65px
+      ul
+         display: flex
+         justify-content: space-between
+         align-items: center
+         width: 100%
+         height: 100%
+         li
+            position: relative
+            a,
+            button
+               display: flex
+               align-items: center
+               font-size: 1rem
+               font-weight: 300
+               text-transform: uppercase
+               color: rgba($white, 0.6)
+               transition: color 0.2s
+               &:hover
+                  color: rgba($white, 1)
+            
+            ul
+               width: 300px
+               padding: 20px 0 39px 39px
+               position: absolute
+               top: 45px
+               left: 8px
+               flex-direction: column
+               background-color: rgba($white, 0.9)
+               height: unset
+               align-items: start
+               &::after 
+                  content: ''
+                  width: 100%
+                  height: 50%
+                  background-image: url(../img/header/submenu.png)
+                  background-repeat: no-repeat
+                  background-size: cover
+                  position: absolute
+                  bottom: 0
+                  right: 0
+               li 
+                  position: relative
+                  z-index: 2
+                  a
+                     color: #3b424b
+                     text-transform: none
+                     font-weight: 500
+                     line-height: 48px
+                     letter-spacing: -0.21px
+                     transition: all 0.2s
+                     &::before
+                        content: ''
+                        width: 0px
+                        height: 1px
+                        margin-right: 10px
+                        background-color: $gold
+                        transition: all 0.2s
+                     &:hover
+                        font-size: 17px
+                        letter-spacing: -0.27px
+                        color: $gold
+                        &::before
+                           width: 40px
+               li + li
+                  margin-left: 0
+               
+               li:last-child
+                  margin-left: 0
+      &--phone
+         font-size: 1.1rem !important
+         color: $white !important
+
+      &--right
+         margin-left: 80px
+      &--left
+         margin-right: 80px
+      
+      .menu__sub
+         position: relative
+         cursor: pointer
+         &--active
+            color: rgba($white, 1)
+
+      .menu__favorites
+         position: absolute
+         right: -34px
+         top: -6px
+         display: flex
+         justify-content: center
+         align-items: center
+         width: 26px
+         height: 26px
+         background: url(../img/common/favorite.svg) right center/contain no-repeat
+         cursor: pointer
+
+   &__messanger,
+   &__social
+      display: flex
+      align-items: center
+      width: auto !important
+      gap: 1rem
+      a
+         display: flex
+         width: 24px
+         height: 24px
+         svg
+            height: 100%
+            object-position: center
+            transition: all 0.2s
+         &:hover
+            svg
+               fill-opacity: 1
+
+   &__messanger
+      &--whatsapp,
+      &--tg
+         fill-opacity: .45
+
+      &--whatsapp
+         fill: #43d854
+      &--tg
+         fill: #0088cc
+
+   &__social
+      &--facebook,
+      &--instagram,
+      &--vk
+         fill: $white
+         fill-opacity: .45
+
+   &--light
+      position: relative
+      .header
+         &__container 
+            padding-bottom: 20px
+      
+         &__menu > ul > li > a 
+            font-weight: 500
+            color: rgba(#000, 0.6)
+            transition: color 0.2s
+            &::before,
+            &::after 
+               content: ''
+               width: 0
+               height: 2px
+               background-color: $gold
+               position: absolute
+               bottom: -25px
+               transition: all 0.2s
+            &::before 
+               right: 50%
+            &::after
+               left: 50%
+            &:hover 
+               color: rgba(#000, 1)
+               &::before,
+               &::after 
+                  width: 50%
+         &__menu
+            .menu__favorites
+               &::before, 
+               &::after
+                  content: none !important
+
+            &--phone
+               color: #000 !important
+
+         &__messanger,
+         &__social
+            a
+               &::before, &::after
+                  content: none !important
+                  
+         
+         &__messanger
+            &--whatsapp,
+            &--tg
+               fill-opacity: 1
+
+         &__social
+            &--facebook,
+            &--instagram,
+            &--vk
+               fill: $black
+               fill-opacity: .4
+
+         &__logo
+            &::before,
+            &::after 
+               background-color: $gold
