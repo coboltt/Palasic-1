@@ -1,0 +1,178 @@
+@import ./4-templates/#template
+
+.page
+    &--repair
+        position: relative
+        // background-color: black
+        // color: white
+        .header
+            position: relative
+            background: url(../img/repair/header-bg.jpg) bottom / cover no-repeat
+            padding-bottom: 290px
+            background-color: transparent
+
+.repair
+    width: 100% !important
+    z-index: 3
+    position: relative
+    overflow: hidden
+
+.section
+    .repair__title
+        height: 86px
+        position: absolute
+        top: -164px
+        font-family: Orchidea Pro
+        font-size: 36px
+        font-weight: normal
+        font-stretch: normal
+        font-style: normal
+        letter-spacing: -0.6px
+        color: #ffffff
+
+.tabs__container
+    .tabs
+        // input[type="radio"] {
+        //     position: absolute;
+        //     top: 0;
+        //     left: -9999px;
+        #tab1, #tab2, #tab3
+            appearance: none
+
+
+.tabs-titles-navigation
+    width: 85%
+    margin-left: 119px
+    display: grid
+    grid-template-columns: repeat(3, max-content)
+    border-bottom: 1px solid #979797
+    .tabs__title
+        padding: 37px 0 10px 0
+        margin-right: 55px
+        font-family: 'Orchidea Pro'
+        font-size: 24px
+        letter-spacing: -0.03px
+        text-align: center
+        
+// не работает, доделать
+input
+    [id^="tab"]:checked + label
+        border-bottom: 3px solid #c2a07c
+            
+
+
+.tabs-standart__container-1
+    margin-left: 119px
+    display: grid
+    grid-template-columns: repeat(4, auto)
+    grid-template-rows: repeat(2,auto)
+    grid-gap: 37px 64px
+    overflow: hidden
+    .repair-decription
+        width: 900px
+        grid-row: 1 / 2
+        grid-column: span 2
+        margin-top: 33px
+        font-family: 'Museo Sans'
+        font-size: 15px
+        font-weight: 300
+        letter-spacing: -0.11px
+    .slider-info, .slider-wrapper
+        grid-row: 2 / 3
+    .slider-info__title
+        width: 245px
+        height: 96px
+        font-family: 'Orchidea Pro'
+        font-size: 24px
+         letter-spacing: -0.03px
+    .repair-price__container
+        margin: 16px 0 28px 0
+        font-family: 'Museo Sans'
+        font-size: 14px
+        font-weight: 300
+         letter-spacing: -0.1px
+        .sup
+            top: 0
+        .slider-info__span 
+            font-family: 'Orchidea Pro'
+            font-size: 18px
+            font-weight: 500
+            letter-spacing: -0.12px
+    .slider
+        display: flex
+        .item-slider
+            margin-right: 14px
+    .control-slider
+        margin-top: 38px
+        margin-bottom: 35px
+        display: flex
+        align-items: center
+        .number-slider
+            font-size: 14px
+            padding: 0 13px
+            font-family: 'Orchidea Pro'
+            font-style: italic
+            .main-number-slider
+                font-size: 21px
+
+.tabs-standart__container-2
+    background-color: #f9f9f9
+    .tabs-standart-content__container
+        display: grid
+        grid-template-columns: max-content auto
+        grid-template-rows: repeat(2, auto)
+        column-gap: 2em
+        padding-top: 29px
+        padding-bottom: 30px
+        margin-left: 119px
+        .repair-catalog__container
+            grid-row: 1 / 2
+            grid-column: 1 / 2
+            .slider-info__title
+                width: 245px
+                font-family: 'Orchidea Pro'
+                font-size: 24px
+                         letter-spacing: -0.03px
+                margin-bottom: 19px
+                padding: 0
+        .used-material__container
+            width: 75vw
+            grid-row: 1 / 3
+            grid-column: 2 / 3
+            display: grid
+            grid-template-columns: repeat(3, 1fr)
+            grid-template-rows: repeat(2, 1fr)
+            // column-gap: 
+            .used-materials
+                display: flex
+                flex-direction: column
+                align-items: center
+                .circles
+                    margin-bottom: 10px
+                    .circle__img
+                        width: 154px
+                        height: 101px
+                        object-fit: contain
+                .material-desc
+                    width: 290px
+                    text-align: center
+
+.tabs-standart__container-3
+    width: 100vw
+    height: 242px
+    background: url(../img/repair/footer-bg-x1.jpg) bottom / cover no-repeat
+    display: flex
+    align-items: center
+    justify-content: center
+    .advice
+        // border: 1px solid #000
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        .advice__title
+            font-family: 'Orchidea Pro'
+            font-size: 24px
+            letter-spacing: -0.03px
+            margin-bottom: 31px
+            color: #ffffff

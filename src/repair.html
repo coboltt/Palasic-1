@@ -1,22 +1,141 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Выбор квартиры</title>
-   <link rel="stylesheet" href="./style/magnific-popup.css">
-   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-   <link rel="stylesheet" href="./style/aos.css">
-   <link rel="stylesheet" href="./style/flat-single.css">
-</head>
-
-<body class="page page--light">
-
-   @@include('./pages/generic/header.html', { "logo": "logo-min-gold.svg", "mod": "header--light" })
-   @@include('./pages/generic/submenu.html', { "flat": "class='submenu__item--active'" })
-
    
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Выбор квартиры</title>
+      <link rel="stylesheet" href="./style/magnific-popup.css">
+      <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+      <link rel="stylesheet" href="./style/aos.css">
+      <link rel="stylesheet" href="./style/repair.css">
+      
+   </head>
+   
+   <body class="page page--light page--repair">
+      
+      @@include('./pages/generic/header.html', { "logo": "logo-min.svg", "mod": "page--dark" })
+      
+      <main class="repair">
+         <section class="section">
+            <h1 class="repair__title">Отделка и меблировка <br> от застройщика всего за 100 дней</h1>
+            <nav class="tabs-titles-navigation">
+               <label class="tabs-standart__title tabs__title" for="tab1">Стандарт</label>
+               <label class="tabs-comfort__title tabs__title" for="tab2">Комфорт</label>
+               <label class="tabs-prestige__title tabs__title" for="tab3">Престиж</label>
+            </nav>
+            <ul class="tabs__container">
+               <li class="tabs-standart tabs"><input type="radio" name="tabs" id="tab1" checked>                 
+                  <div class="tabs-standart-common__container">
+                     <section class="tabs-standart__container-1">
+                        <p class="repair-decription">
+                           Яркое дизайнерское решение с эргономичными источниками света в стиле лофт, безворсовые ковры ручной работы, оригинальная и функциональная мебель и современные двери для всех помещений квартиры. Уже с первых минут Вы ощутите изящность, функциональность и наслаждение простором в стенах Вашего дома!
+                        </p>
+                        <article class="slider-info">
+                           <h2 class="slider-info__title">Идеальное решение интерьера для Вашей квартиры</h2>
+                           <p class="repair-price__container">
+                              Стоимость за м<sup class="sup">2</sup><span class="slider-info__span"> от <span>49 500</span>&#x20bd;</span>
+                           </p>
+                           <button type="submit" class="repair__btn btn">Заказать отделку</button>
+                        </article>
+                        <div class="slider-wrapper">
+                           <div class="slider">
+                              <img width="312px" height="214px" src="./img/repair/item-1.jpg" alt="" class="item-slider">
+                              <img width="312px" height="214px" src="./img/repair/item-2.jpg" alt="" class="item-slider">
+                              <img width="312px" height="214px" src="./img/repair/item-3.jpg" alt="" class="item-slider">
+                              <img width="312px" height="214px" src="./img/repair/item-2.jpg" alt="" class="item-slider">
+                              <img width="312px" height="214px" src="./img/repair/item-1.jpg" alt="" class="item-slider">
+                           </div>
+                           <div class="control-slider">
+                              <button type="button" class="arrow-pred__btn arrow__btn">
+                                 <svg class="arrow-pred" width="50" height="28" viewBox="0 0 50 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.2571 1.27209L0.529158 14L13.2571 26.7279" stroke="#C2A07C"/>
+                                    <path d="M49 14.067H2" stroke="#C2A07C" stroke-linecap="square"/>
+                                 </svg>                          
+                              </button>
+                              <p class="number-slider">
+                                 <span class="main-number-slider">01</span> / <span>05</span>
+                              </p>
+                              <button type="button" class="arrow-next__btn arrow__btn">
+                                 <svg class="arrow-next" width="50" height="26" viewBox="0 0 50 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M36.7429 0.272095L49.4708 13L36.7429 25.7279" stroke="#C2A07C"/>
+                                    <path d="M1 13.067H48" stroke="#C2A07C" stroke-linecap="square"/>
+                                 </svg>
+                              </button>
+                           </div>
+                        </div>
+                     </section>
+      
+                     <section class="tabs-standart__container-2">
+                        <div class="tabs-standart-content__container">
+                           <div class="repair-catalog__container">
+                              <h2 class="slider-info__title">Используемы материалы отделки</h2>
+                              <button type="button" class="btn">Скачать полный каталог</button>
+                           </div>
+                           <section class="used-material__container">
+                              <article class="used-materials">
+                                 <figure class="circles">
+                                    <img src="./img/repair/item-grid-1.jpg" alt="" class="circle__img">
+                                 </figure>
+                                 <p class="material-desc">Портьерные ткани с эффектом dimount, затемнением на 98% и плотностью 320 г/м2</p>
+                              </article>
+                              <article class="used-materials">
+                                 <figure class="circles">
+                                    <img src="./img/repair/item-grid-2.jpg" alt="" class="circle__img">
+                                 </figure>
+                                 <p class="material-desc">Высококачественный керамогранит, изготовленный на итальянском оборудовании</p>
+                              </article>
+                              <article class="used-materials">
+                                 <figure class="circles">
+                                    <img src="./img/repair/item-grid-3.jpg" alt="" class="circle__img">
+                                 </figure>
+                                 <p class="material-desc">Напольные покрытия, состоящие на 90% из натуральной древесины без содержания формальдегидов</p>
+                              </article>
+                              <article class="used-materials">
+                                 <figure class="circles">
+                                    <img src="./img/repair/item-grid-4.jpg" alt="" class="circle__img">
+                                 </figure>
+                                 <p class="material-desc">Европейская сантехническая керамика с современной технологией Clean ON</p>
+                              </article>
+                              <article class="used-materials">
+                                 <figure class="circles">
+                                    <img src="./img/repair/item-grid-5.jpg" alt="" class="circle__img">
+                                 </figure>
+                                 <p class="material-desc">Нидерландские «Кухонные фасады с хорошей кармой» из переработанных материалов</p>
+                              </article>
+                              <article class="used-materials">
+                                 <figure class="circles">
+                                    <img src="./img/repair/item-grid-6.jpg" alt="" class="circle__img">
+                                 </figure>
+                                 <p class="material-desc">Светильники Британской дизайн студии Томаса Диксона</p>
+                              </article>
+                           </section>
+                        </div>
+                     </section>
+                     
+                     <section class="tabs-standart__container-3">
+                        <div class="advice">
+                           <h2 class="advice__title">Получите профессиональную консультацию по отделке Вашей квартиры!</h2>
+                           <button class="advice__btn btn">
+                              Получить консультацию
+                           </button>
+                        </div>
+                     </section>
+                  </div>
+             
+            </li>
+
+            <li class="tabs-comfort tabs">
+               <input type="radio" name="tabs" id="tab2">
+            </li>
+
+            <li class=" tabs">
+               <input type="radio" name="tabs" id="tab3">
+            </li>
+
+         </ul>
+      </section>
+   </main>
 
    @@include('./pages/generic/modals/fixed-buttons.html')
 
